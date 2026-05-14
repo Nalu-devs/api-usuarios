@@ -65,6 +65,10 @@ usuarios = [
   }
 ]
 
+@app.route('/')
+def home():
+    return jsonify({"message": "API de Usuários", "endpoints": {"/usuarios": "GET - Lista todos os usuários"}})
+
 @app.route('/usuarios', methods=['GET'])
 def listar_usuarios():
     return jsonify(usuarios)

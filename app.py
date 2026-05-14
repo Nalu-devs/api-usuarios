@@ -2,8 +2,7 @@ from flask import Flask, jsonify, request
 
 app = Flask(__name__)
 
-usuarios =
-[
+usuarios = [
   {
     "id": 1,
     "name": "Ana Lú",
